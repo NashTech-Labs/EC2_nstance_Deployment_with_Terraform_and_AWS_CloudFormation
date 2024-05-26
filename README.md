@@ -15,13 +15,11 @@ Follow these steps to install ArgoCD on your Kubernetes cluster:
 
 1. Clone this repository to your local machine.
 2. Run `terraform init` to initialize the Terraform configuration.
-3. Run `terraform apply` to apply the changes and install ArgoCD.
-4. After the installation completes, access ArgoCD using the provided NodePort or LoadBalancer IP.
+3. Run `terraform apply` to apply the changes.
 
 
 ## Configuration
 
-This Terraform configuration creates the following Kubernetes resources:
 
 - Provider Configuration: Update the provider.tf file to specify your desired AWS region
 - EC2 Instance Configuration: Modify the cloudformation.tf file to customize the EC2 instance's specifications according to your requirements..
@@ -29,4 +27,4 @@ This Terraform configuration creates the following Kubernetes resources:
 
 ## Cleanup
 
-To remove ArgoCD installation, run `terraform destroy`. Make sure to take necessary backups before destroying the resources.
+To remove infrastructure, run `terraform destroy`. Make sure to take necessary backups before destroying the resources.
